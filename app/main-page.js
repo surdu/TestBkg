@@ -1,16 +1,11 @@
-var siteIndex = 0;
-
-var sites = [
-  "https://nativescript.org",
-  "https://google.com"
-]
+var index = 0;
 
 function loaded(args) {
   const webview = args.object;
   console.log("webview.src:", webview.src);
-  console.log("siteIndex:", siteIndex);
-  if (siteIndex == 0) {
-    webview.src = sites[siteIndex++];
+  console.log("index:", index);
+  if (index == 0) {
+    webview.src = "https://nativescript.org";
   }
 }
 
