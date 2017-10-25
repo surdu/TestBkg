@@ -9,7 +9,7 @@ function loaded(args) {
   const webview = args.object;
   console.log("webview.src:", webview.src);
   console.log("siteIndex:", siteIndex);
-  if (siteIndex < 2) {
+  if (siteIndex == 0) {
     webview.src = sites[siteIndex++];
   }
 }
