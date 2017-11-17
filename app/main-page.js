@@ -1,7 +1,7 @@
 var index = 0;
 
 function loaded(args) {
-  const webview = args.object;
+  const webview = args.object.getViewById("webview");
   if (index == 0) {
     webview.src = "https://nativescript.org";
   }
